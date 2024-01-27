@@ -1474,6 +1474,12 @@ main{
   --tw-bg-opacity: 1;
   background-color: rgb(33 33 34 / var(--tw-bg-opacity));
 }
+@media (min-width: 828px){
+
+  .over-lay{
+    display: none;
+  }
+}
 .over-lay {
   background-color: hsl(0, 0%, 0%, 0.4);
   width: 100%;
@@ -1525,6 +1531,10 @@ main{
   .overlay-menu{
     width: 58.333333%;
   }
+}
+
+.overlay-menu {
+  margin-top: -80px;
 }
 
 
@@ -1821,30 +1831,7 @@ main{
 .chart article{
   display: flex;
   width: 100%;
-}
-
-@media (max-width: 220px){
-
-  .chart article{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 220px){
-
-  .chart article{
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 221px){
-
-  .chart article{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 .chart article h3{
@@ -1860,14 +1847,6 @@ main{
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
-}
-
-@media (max-width: 220px){
-
-  .sorted-by{
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
 .sorted-icon{
@@ -2691,35 +2670,6 @@ footer{
 
   .max-\[639px\]\:w-\[90\%\]{
     width: 90%;
-  }
-}
-
-@media (max-width: 220px){
-
-  .max-\[220px\]\:flex-col{
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 220px){
-
-  .min-\[220px\]\:items-start{
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 221px){
-
-  .min-\[221px\]\:flex-row{
-    flex-direction: row;
-  }
-
-  .min-\[221px\]\:items-center{
-    align-items: center;
-  }
-
-  .min-\[221px\]\:justify-between{
-    justify-content: space-between;
   }
 }
 

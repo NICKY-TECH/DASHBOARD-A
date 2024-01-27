@@ -20,6 +20,7 @@ main {
   @apply grid grid-cols-12 grid-rows-12 h-full dark:bg-body-dark w-full;
 }
 .over-lay {
+  @apply min-[828px]:hidden;
   background-color: hsl(0, 0%, 0%, 0.4);
   width: 100%;
   height: 100%;
@@ -43,6 +44,7 @@ main {
 
 .overlay-menu {
   @apply max-[639px]:w-[90%] sm:w-7/12 flex bg-bg-lightmode rounded-lg h-[80%] py-2;
+  margin-top: -80px;
 }
 
 
@@ -127,7 +129,7 @@ main {
 }
 
 .chart article {
-  @apply flex w-full min-[221px]:justify-between min-[221px]:items-center min-[220px]:items-start max-[220px]:flex-col min-[221px]:flex-row max-[220px]:items-center;
+  @apply flex w-full justify-between;
 }
 
 .chart article h3 {
@@ -136,7 +138,7 @@ main {
 }
 
 .sorted-by {
-  @apply flex gap-2 w-[70%] justify-end items-center max-[220px]:flex-col max-[220px]:items-start;
+  @apply flex gap-2 w-[70%] justify-end items-center;
 }
 
 .sorted-icon {
