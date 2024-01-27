@@ -20,6 +20,16 @@ main {
   @apply grid grid-cols-12 grid-rows-12 h-full dark:bg-body-dark w-full;
 }
 .over-lay {
+  background-color: hsl(0, 0%, 0%, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay-nav-lay {
   @apply min-[828px]:hidden;
   background-color: hsl(0, 0%, 0%, 0.4);
   width: 100%;
@@ -30,8 +40,18 @@ main {
   z-index: 1;
 }
 
+.overlay-nav-lay {
+  @apply flex justify-center w-full h-full items-center min-[828px]:hidden;
+}
+
 .overlay-inner {
   @apply flex justify-center w-full h-full items-center;
+}
+
+.overlay-nav-menu{
+
+    @apply w-[90%] flex bg-bg-lightmode rounded-lg h-[80%] py-2 min-[828px]:hidden;
+  
 }
 
 .overlay-aside {
@@ -425,7 +445,7 @@ footer {
 }
 
 .aside {
-  @apply flex flex-col w-full space-y-9 h-full px-4 dark:bg-element-dark dark:text-gray-400;
+  @apply flex flex-col w-full space-y-9 h-full px-4 dark:bg-element-dark dark:text-gray-400 bg-white;
 }
 
 .bell-icon-mobile{

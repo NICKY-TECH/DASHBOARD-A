@@ -67,9 +67,9 @@ useEffect(()=>{
 <>
 <Loader/>
 {
-  overlay?<div className="over-lay hover:cursor-pointer">
-<div className="overlay-inner">
-<div className="overlay-menu dark:bg-element-dark">
+  overlay?<div className={asideLay?"":"over-lay hover:cursor-pointer"}>
+<div className={asideLay?"":"overlay-inner"}>
+<div className={asideLay?"":"overlay-menu dark:bg-element-dark"}>
 {
   info?<div className="info-data dark:bg-element-dark dark:text-gray-400">
   <div className="close-menu w-full flex justify-end">
@@ -127,7 +127,21 @@ useEffect(()=>{
 <p>&nbsp; vs. previous month</p>
 
    </div>
-  </div>:asideLay?<div className="aside">
+  </div>:""
+}
+
+
+</div>
+
+</div>
+
+  </div>:""
+}
+  {
+    asideLay?<div className="overlay-nav-lay">
+    <div className="overlay-nav-inner">
+      <div  className="overlay-nav-menu dark:bg-element-dark">
+<div className="aside">
 <div className="close-menu w-full flex justify-end">
 
 <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg" className='cursor-pointer fill-[#000000] dark:fill-[#ffffff]'  onClick={()=>{
@@ -203,16 +217,13 @@ useEffect(()=>{
   </div>
         </button>
     
-  </div>:""
-}
+  </div>
+      </div>
+    </div>
 
+    </div>:""
+  }
 
-</div>
-
-</div>
-
-  </div>:""
-}
 
   
 </>
