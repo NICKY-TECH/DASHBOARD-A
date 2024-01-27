@@ -364,10 +364,13 @@ footer {
 }
 
 .sider-bar .top-nav-list li:hover {
-  @apply dark:bg-white dark:text-gray-400 bg-[#34CAA5];
+  @apply bg-white dark:text-gray-400 dark:bg-[#34CAA5];
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+.category{
+  @apply dark:bg-white dark:w-[40px] dark:h-[40px] dark:rounded-full;
 }
 
 .sider-bar .top-nav-list li img {

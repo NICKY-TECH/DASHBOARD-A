@@ -1,7 +1,7 @@
 import "../styles/destination.css"
-function SideList({ img }) {
+function SideList({ img,is }) {
   return (
-    <li>
+    <li className={is==="yes"? "category" :""}>
       <img src={img} />
     </li>
   );

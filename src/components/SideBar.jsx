@@ -45,13 +45,13 @@ function SideBar() {
   return (
     <aside className="sider-bar">
       <ul className="top-nav-list">
-        <SideList img={bolt} />
-        <SideList img={category} />
-        <SideList img={trade} />
-        <SideList img={profile} />
-        <SideList img={pack} />
-        <SideList img={discount} />
-        <SideList img={important} />
+        <SideList img={bolt} is="yes"/>
+        <SideList img={category} is="yes"/>
+        <SideList img={trade} is="yes" />
+        <SideList img={profile} is="yes" />
+        <SideList img={pack} is="yes"/>
+        <SideList img={discount} is="yes"/>
+        <SideList img={important} is="yes"/>
         <button className="mode relative bg-white">
 <div className= {darkValue==="light"?"bg-[#34CAA5] p-1 toggle":""} onClick={switchItLight}>
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
