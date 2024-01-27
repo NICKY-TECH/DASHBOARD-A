@@ -30,7 +30,7 @@ main {
 }
 
 .overlay-nav-lay {
-  @apply min-[828px]:hidden;
+  @apply min-[828px]:hidden flex justify-center;
   background-color: hsl(0, 0%, 0%, 0.4);
   width: 100%;
   height: 100%;
@@ -50,7 +50,7 @@ main {
 
 .overlay-nav-menu{
 
-    @apply w-[90%] flex bg-bg-lightmode rounded-lg h-[80%] py-2 min-[828px]:hidden;
+    @apply w-full flex bg-bg-lightmode rounded-lg h-[80%] py-2 min-[828px]:hidden;
   
 }
 
@@ -407,7 +407,7 @@ footer {
 
 
 .category{
-  @apply dark:bg-white dark:w-[40px] dark:h-[40px] dark:rounded-full bg-[#34CAA5];
+  @apply dark:bg-white dark:w-[40px] dark:h-[40px] dark:rounded-full;
 }
 
 

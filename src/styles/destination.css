@@ -808,9 +808,6 @@ video {
 .w-\[70\%\]{
   width: 70%;
 }
-.w-\[90\%\]{
-  width: 90%;
-}
 .w-auto{
   width: auto;
 }
@@ -1489,6 +1486,11 @@ main{
   z-index: 1;
 }
 
+.overlay-nav-lay{
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 828px){
 
   .overlay-nav-lay{
@@ -1527,7 +1529,7 @@ main{
 .overlay-nav-menu{
   display: flex;
   height: 80%;
-  width: 90%;
+  width: 100%;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
@@ -2389,12 +2391,6 @@ footer{
 }
 
 
-.category{
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 202 165 / var(--tw-bg-opacity));
-}
-
-
 :is(.dark .category){
   height: 40px;
   width: 40px;
@@ -2645,10 +2641,6 @@ footer{
 
 :is(.dark .dark\:w-\[40px\]){
   width: 40px;
-}
-
-:is(.dark .dark\:rounded-full){
-  border-radius: 9999px;
 }
 
 :is(.dark .dark\:border-2){

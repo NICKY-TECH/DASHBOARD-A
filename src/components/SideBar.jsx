@@ -67,7 +67,7 @@ function SideBar() {
   </div>
         </button>
       </ul>
-      <ul className="bottom-nav-list">
+      <ul className="top-nav-list">
         <SideList img={rightArrow} />
         <SideList img={setting} />
         <SideList img={logout} />
