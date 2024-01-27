@@ -67,7 +67,7 @@ useEffect(()=>{
 <>
 <Loader/>
 {
-  overlay?<div className="over-lay hover:cursor-pointer">
+  overlay?<div className="over-lay hover:cursor-pointer sm:hidden">
 <div className="overlay-inner">
 <div className="overlay-menu dark:bg-element-dark">
 {
