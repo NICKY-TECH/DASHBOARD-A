@@ -32,7 +32,7 @@ function TableRow({ date, amount, status, name, img }) {
         className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white gap-2 text-r"
       >
         <td className=" mr-5">
-        <img className="rounded-full w-[50px] h-auto" src={img} alt="image description"/>
+        <img className="rounded-full w-[60px] h-auto" src={img} alt="image description"/>
         </td>
         <td>{name}</td>
       </th>
