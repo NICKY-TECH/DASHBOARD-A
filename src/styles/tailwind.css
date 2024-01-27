@@ -127,7 +127,7 @@ main {
 }
 
 .chart article {
-  @apply flex w-full justify-between;
+  @apply flex w-full min-[221px]:justify-between min-[221px]:items-center min-[220px]:items-start max-[220px]:flex-col min-[221px]:flex-row;
 }
 
 .chart article h3 {
@@ -136,7 +136,7 @@ main {
 }
 
 .sorted-by {
-  @apply flex gap-2 w-[70%] justify-end items-center;
+  @apply flex gap-2 w-[70%] justify-end items-center max-[220px]:flex-col max-[220px]:items-start;
 }
 
 .sorted-icon {
