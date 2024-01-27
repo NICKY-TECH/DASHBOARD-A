@@ -6,6 +6,7 @@ function Platform({color,percentage,name,amount, percentPlus}) {
   <p className="text-[
 #22242C] font-semibold">{name}</p>
   <ProgressBar completed={percentage} maxCompleted={100} animateOnRender={true} bgColor={color}
+  transitionDuration={"15s"}
    isLabelVisible={false}/>
   <div className="platform-footer">
   <p className="text-neutral">{amount}</p>
