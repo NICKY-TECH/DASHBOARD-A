@@ -1,9 +1,14 @@
 import "../styles/destination.css";
+import userOne from "../resources/images/userone.png";
+import userTwo from "../resources/images/userthree.png";
+import userThree from "../resources/images/userfour.png";
+import userFour from "../resources/images/userfive.png";
+import userFive from "../resources/images/usersix.png"
 import {view} from ".."
 import TableRow from "./TableRow";
 const customers =[
   {
-      "img":"../src/resources/images/userone.png",
+      "img":userOne,
       "name": "Marcus Bergson",
       "date": "Nov 15, 2023",
       "amount":"$80.000",
@@ -11,7 +16,7 @@ const customers =[
 
   },
   {
-      "img":"../src/resources/images/userthree.png",
+      "img":userTwo,
       "name": "Jaydon Vaccaro",
       "date": "Nov 15, 2023",
       "amount":"$150,000",
@@ -19,7 +24,7 @@ const customers =[
 
   },
   {
-      "img":"../src/resources/images/userfour.png",
+      "img":userThree,
       "name": "Corey Schleifer",
       "date": "Nov 14, 2023",
       "amount":"$87,000",
@@ -27,7 +32,7 @@ const customers =[
 
   },
   {
-      "img": "../src/resources/images/userfive.png",
+      "img": userFour,
       "name": "Cooper Press",
       "date": "Nov 14, 2023",
       "amount":"$100,000",
@@ -35,7 +40,7 @@ const customers =[
 
   },
   {
-      "img":"../src/resources/images/usersix.png",
+      "img":userFive,
       "name": "Phillip Lubin",
       "date": "Nov 14, 2023",
       "amount":"$78,000",
