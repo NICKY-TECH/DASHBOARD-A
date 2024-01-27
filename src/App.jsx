@@ -67,7 +67,7 @@ useEffect(()=>{
 <>
 <Loader/>
 {
-  overlay?<div className="over-lay hover:cursor-pointer sm:hidden">
+  overlay?<div className="over-lay hover:cursor-pointer min-[828px]:hidden pb-11">
 <div className="overlay-inner">
 <div className="overlay-menu dark:bg-element-dark">
 {
@@ -188,7 +188,7 @@ useEffect(()=>{
    
 
     </aside>
-    <button className="mode-mobile relative bg-white">
+    <button className="mode-mobile relative bg-white mb-4">
 <div className= {darkValue==="light"?"bg-[#34CAA5] toggles":""} onClick={switchItLight}>
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-[4.5rem] h-[2.5rem]">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
