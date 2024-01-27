@@ -29,49 +29,6 @@ import userFour from "./resources/images/userfive.png";
 import userFive from "./resources/images/usersix.png";
 import view from "./resources/images/view.png"
 
-const customers =[
-    {
-        "img":"/src/resources/images/userone.png",
-        "name": "Marcus Bergson",
-        "date": "Nov 15, 2023",
-        "amount":"$80.000",
-        "status":"Paid"
-
-    },
-    {
-        "img":"/src/resources/images/userthree.png",
-        "name": "Jaydon Vaccaro",
-        "date": "Nov 15, 2023",
-        "amount":"$150,000",
-        "status":"Refund"
-
-    },
-    {
-        "img":"/src/resources/images/userfour.png",
-        "name": "Corey Schleifer",
-        "date": "Nov 14, 2023",
-        "amount":"$87,000",
-        "status":"Paid"
-
-    },
-    {
-        "img": "/src/resources/images/userfive.png",
-        "name": "Cooper Press",
-        "date": "Nov 14, 2023",
-        "amount":"$100,000",
-        "status":"Refund"
-
-    },
-    {
-        "img":"/src/resources/images/usersix.png",
-        "name": "Phillip Lubin",
-        "date": "Nov 14, 2023",
-        "amount":"$78,000",
-        "status":"Paid"
-
-    }
-    
-]
 
 export {
     bolt,
@@ -104,7 +61,6 @@ export {
     view,
     userFour,
     userFive,
-    customers
   };
 
 

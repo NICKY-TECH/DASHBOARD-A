@@ -1,7 +1,49 @@
 import "../styles/destination.css";
-import { customers } from "..";
 import {view} from ".."
 import TableRow from "./TableRow";
+const customers =[
+  {
+      "img":"/src/resources/images/userone.png",
+      "name": "Marcus Bergson",
+      "date": "Nov 15, 2023",
+      "amount":"$80.000",
+      "status":"Paid"
+
+  },
+  {
+      "img":"/src/resources/images/userthree.png",
+      "name": "Jaydon Vaccaro",
+      "date": "Nov 15, 2023",
+      "amount":"$150,000",
+      "status":"Refund"
+
+  },
+  {
+      "img":"/src/resources/images/userfour.png",
+      "name": "Corey Schleifer",
+      "date": "Nov 14, 2023",
+      "amount":"$87,000",
+      "status":"Paid"
+
+  },
+  {
+      "img": "/src/resources/images/userfive.png",
+      "name": "Cooper Press",
+      "date": "Nov 14, 2023",
+      "amount":"$100,000",
+      "status":"Refund"
+
+  },
+  {
+      "img":"/src/resources/images/usersix.png",
+      "name": "Phillip Lubin",
+      "date": "Nov 14, 2023",
+      "amount":"$78,000",
+      "status":"Paid"
+
+  }
+  
+]
 
 function Table() {
   return (
