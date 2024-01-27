@@ -4,11 +4,17 @@ export const asideSlice = createSlice({
   name: "asideeffect",
   initialState: { value: false },
   reducers: {
-   asideState: (state) => {
-      return {
-        ...state,
-        value: !state.value,
-      };
+   asideState: (state,action) => {
+    if(action.payload===false){
+        return {
+          ...state,
+          value:action.payload
+        }
+      }
+       return {
+          ...state,
+          value: !state.value
+       }
     },
   },
 });

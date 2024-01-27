@@ -7,6 +7,7 @@ import infoLay from "./feature/info.js";
 import darkMode from "./feature/darkmode.js";
 import infoLayData from "./feature/infoData.js";
 import { configureStore } from "@reduxjs/toolkit";
+import aside  from "./feature/aside.js";
 import { Provider } from "react-redux";
 
 const store = configureStore({
@@ -15,7 +16,8 @@ const store = configureStore({
     tradeLay,
     darkMode,
     infoLay,
-    infoLayData
+    infoLayData,
+    aside,
   },
 });
 

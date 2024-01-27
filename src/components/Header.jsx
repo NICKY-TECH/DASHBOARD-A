@@ -1,8 +1,17 @@
 import "../styles/destination.css";
 import { calendar,bell,avatar,downArrow } from "../index";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { asideState } from "../feature/aside";
+import { changeTradeState } from "../feature/trade";
+import { changeOverLayState } from "../feature/overLay";
+import { changeInfoState } from "../feature/info";
+import { changeInfoDataState } from "../feature/infoData";
 
 
 function Header (){
+  const asideLay = useSelector((state) => state. aside.value);
+  const dispatch = useDispatch();
 
 return <header className="main-header">
     <h2 className="header-title">Dashboard</h2>
@@ -44,9 +53,21 @@ return <header className="main-header">
 
     </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 ham hover:cursor-pointer">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+  <div onClick={()=>{
+    console.log("menu clicked")
+   dispatch(asideState(true));
+   dispatch(changeTradeState(false));
+  dispatch(changeInfoState(false));
+  dispatch(changeOverLayState(true));
+  dispatch(
+    changeInfoDataState({
+    })
+  )
+  }}>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 ham hover:cursor-pointer">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"  />
 </svg>
+  </div>
 
     
 

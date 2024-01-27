@@ -7,7 +7,7 @@ export default {
         Lato: ["Lato"],
       },
       colors: {
-        "bg-lightmode": "#fafafa",
+        "bg-lightmode": "#f5f5f5",
         "border": "#A3A3A3",
         "hover-effect":"#8847",
         "bell-border":"#e5e5e5",

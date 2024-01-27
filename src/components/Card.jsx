@@ -4,12 +4,14 @@ import { changeTradeState } from "../feature/trade";
 import { changeOverLayState } from "../feature/overLay";
 import { changeInfoState } from "../feature/info";
 import { changeInfoDataState } from "../feature/infoData";
+import { asideState } from "../feature/aside";
 function Card ({ topIcon,indicator,label,amount,rate }){
 const dispatch = useDispatch();
 function viewData(topIcon,indicator,label,amount,rate) {
    dispatch(changeTradeState(true));
    dispatch(changeInfoState(false));
    dispatch(changeOverLayState(true));
+   dispatch(asideState(false))
    dispatch(
      changeInfoDataState({
        "topIcon": topIcon,

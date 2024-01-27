@@ -3,7 +3,6 @@ import CardWrapper from "./CardWrapper";
 import Chart from "./Chart";
 import Platform from "./Platform";
 import Table from "./Table";
-import { Link } from "react-router-dom";
 
 function MainBody() {
   return (

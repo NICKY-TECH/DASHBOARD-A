@@ -5,6 +5,7 @@ import { changeTradeState } from "../feature/trade";
 import { changeOverLayState } from "../feature/overLay";
 import { changeInfoState } from "../feature/info";
 import { changeInfoDataState } from "../feature/infoData";
+import { asideState } from "../feature/aside";
 
 function TableRow({ date, amount, status, name, img }) {
   const dispatch = useDispatch();
@@ -12,6 +13,7 @@ function TableRow({ date, amount, status, name, img }) {
     dispatch(changeTradeState(false));
     dispatch(changeInfoState(true));
     dispatch(changeOverLayState(true));
+    dispatch(asideState(false))
     dispatch(
       changeInfoDataState({
         image: img,

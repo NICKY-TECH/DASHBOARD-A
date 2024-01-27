@@ -20,7 +20,7 @@ main {
   @apply grid grid-cols-12 grid-rows-12 h-full dark:bg-body-dark w-full;
 }
 .over-lay {
-  background-color: hsl(0, 0%, 0%, 0.6);
+  background-color: hsl(0, 0%, 0%, 0.4);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -33,9 +33,18 @@ main {
   @apply flex justify-center w-full h-full items-center;
 }
 
-.overlay-content {
-  @apply max-[639px]:w-[90%] sm:w-7/12 flex bg-white rounded-lg h-[80%] py-2;
+.overlay-aside {
+  @apply flex justify-end w-full h-full;
 }
+
+/* .overlay-content {
+  @apply max-[639px]:w-[90%] sm:w-7/12 flex bg-white rounded-lg h-[80%] py-2;
+} */
+
+.overlay-menu {
+  @apply max-[639px]:w-[90%] sm:w-7/12 flex bg-bg-lightmode rounded-lg h-[80%] py-2;
+}
+
 
 /* @apply rounded-lg px-2 py-4 flex flex-col justify-between bg-white col-span-6 row-span-6 hover:cursor-pointer; */
 
@@ -64,9 +73,13 @@ main {
 
 .toggle {
   @apply flex justify-center items-center;
-border-radius: 50px;
-width: 30px;
-height: 30px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.toggles{
+  @apply flex justify-center items-center rounded-full p-1;
 }
 
 /* .button-switch{
@@ -142,7 +155,7 @@ height: 30px;
   cursor: pointer;
 }
 
-ul li {
+.top-nav-list li {
   @apply list-none hover:cursor-pointer gap-2 justify-center flex w-full;
 }
 
@@ -160,6 +173,12 @@ ul li {
   @apply lg:w-[55%];
 }
 
+.input-mobile {
+  @apply w-full;
+}
+
+
+
 .input-field input {
   @apply w-full;
 }
@@ -176,11 +195,11 @@ ul li {
   @apply flex space-x-2;
 }
 
-.bell-icon{
+.bell-icon {
   @apply dark:bg-white;
 }
 
-.calendar-details img{
+.calendar-details img {
   @apply dark:bg-white dark:p-[0.5rem];
   border-radius: 50%;
 }
@@ -320,7 +339,7 @@ footer {
 }
 
 .info-data {
-  @apply flex flex-col w-full px-2 gap-4 font-Lato;
+  @apply flex flex-col w-full px-2 gap-4 font-Lato ;
 }
 
 .info-data-second-half {
@@ -340,18 +359,18 @@ footer {
   @apply flex flex-col;
 }
 
-.sider-bar ul li:hover {
+.sider-bar .top-nav-list li:hover {
   @apply w-full text-gray-900;
 }
 
-.sider-bar ul li:hover{
+.sider-bar .top-nav-list li:hover {
   @apply dark:bg-white dark:text-gray-400 bg-[#34CAA5];
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-.sider-bar ul li img {
+.sider-bar .top-nav-list li img {
   @apply hover:w-full p-2;
   color: white;
 }
@@ -364,7 +383,7 @@ footer {
 }
 
 .comment-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%; /* Position the pointer at the bottom of the container */
   left: 50%;
@@ -374,6 +393,62 @@ footer {
   border-style: solid;
   border-width: 10px 10px 0 10px; /* Adjust the border-width for the pointer */
   border-color: #000000 transparent transparent transparent; /* Match border-color with container background */
+}
+
+.side-bar {
+  @apply bg-white flex flex-col w-5/12 h-full pl-4 pt-4 space-y-10 sm:hidden;
+}
+
+.aside {
+  @apply flex flex-col w-full space-y-9 h-full px-4 dark:bg-element-dark dark:text-gray-400;
+}
+
+.bell-icon-mobile{
+  @apply flex items-center space-x-2
+}
+
+.bell-icon-actual{
+  @apply dark:bg-white rounded-full;
+}
+
+.calendar-details-mobile img{
+  @apply dark:bg-white dark:p-[0.5rem];
+  border-radius: 50%;
+}
+
+.mode-mobile {
+  @apply flex items-center justify-between py-2 px-1;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.calendar-details-mobile{
+  @apply flex space-x-2
+}
+
+.side-bar-mobile{
+  @apply flex w-full space-y-2 flex-wrap;
+}
+
+
+.top-nav-list-mobile{
+  @apply flex space-x-2 w-full justify-center items-center bg-bg-lightmode dark:bg-element-dark p-2 dark:border-white dark:border-2 rounded-full;
+}
+
+.side-bar-mobile li{
+@apply w-full
+}
+
+/* .top-nav-list-mobile li img{
+  height: 60px;
+} */
+
+.top-nav-list-mobile li{
+  @apply flex justify-center items-center
+}
+
+.top-nav-list-mobile li:hover{
+  @apply bg-[#0b0f0e] dark:bg-[#ffffff] hover:rounded-full p-2;
 }
 
 @media (max-width: 1066px) {
