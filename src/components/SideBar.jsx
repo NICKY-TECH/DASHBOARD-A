@@ -45,7 +45,7 @@ function SideBar() {
   return (
     <aside className="sider-bar">
       <ul className="top-nav-list">
-        <SideList img={bolt} is="yes"/>
+        <SideList img={bolt} is="no"/>
         <SideList img={category} is="yes"/>
         <SideList img={trade} is="yes" />
         <SideList img={profile} is="yes" />

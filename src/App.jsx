@@ -147,7 +147,7 @@ useEffect(()=>{
  </div>
 
     </div>
-  <div className="relative input-mobile-full">
+  <div className="relative input-mobile">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none rounded-lg w-full">
         <svg className="w-4 h-4 text-gray-500 dark:text-gray-400 dark:fill-[#ffffff] fill-[#000000]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197M16.5 10.5a6 6 0 1 0-12 0 6 6 0 0 0 12 0zm-5.197 5.197a7.5 7.5 0 1 1 0-10.607 7.5 7.5 0 0 1 0 10.607z" />
