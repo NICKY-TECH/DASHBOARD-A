@@ -79,13 +79,14 @@ function Table() {
                 customers.map((item,index)=>{
                 
                     return <>
-                    <tr className="bg-white border-b dark:bg-element-dark dark:border-gray-700"    key={index}>
+                    <tr className="bg-white border-b dark:bg-element-dark dark:border-gray-700">
                     <TableRow
                         img={item.img}
                         name={item.name}
                         date={item.date}
                         amount={item.amount}
                         status={item.status}
+                        key={index}
 
 
                     />
