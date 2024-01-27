@@ -31,10 +31,11 @@ function TableRow({ date, amount, status, name, img }) {
         scope="row"
         className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white gap-2 text-r"
       >
-        <td className=" mr-5">
+        <td className=" mr-5 flex justify-center items-center space-x-1">
         <img className="h-auto max-w-full rounded-full" src={img} alt="image description"/>
+      {name}
         </td>
-        <td>{name}</td>
+        {/* <td>{name}</td> */}
       </th>
       <td className="px-6 py-4 text-neutral">{date}</td>
       <td className="px-6 py-4">{amount}</td>
