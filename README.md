@@ -44,8 +44,7 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 - For creating an animated progress bar
 
- 5.
-[recharts](https://www.npmjs.com/package/recharts)
+ 5. [recharts](https://www.npmjs.com/package/recharts)
 
 - For adding barchart to project
 
