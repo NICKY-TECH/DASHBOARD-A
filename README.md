@@ -17,6 +17,8 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 - I Implemented this using [@ramonak/react-progress-bar](https://www.npmjs.com/package/@ramonak/react-progress-bar)
 
+3. My mobile view menu screen
+
 
 ### THIS CHALLENGE MADE ME BETTER
 
@@ -43,6 +45,10 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 4. [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner)
 
 - For creating an animated progress bar
+
+4. [recharts][]
+
+- For adding barchart to project
 
 
 
