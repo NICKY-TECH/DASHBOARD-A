@@ -20,4 +20,7 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 1. I learnt how a lot
 
+- I had the opportunity of exploring new packages
+
 2. It helped improve my creative skills as I was meant to think out of the box while implementing the mobile view
+
