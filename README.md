@@ -22,9 +22,7 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 ### THIS CHALLENGE MADE ME BETTER
 
-1. I learnt how a lot
-
-- I had the opportunity of exploring new packages
+1. I had the opportunity of exploring new packages
 
 2. It helped improve my creative skills as I was meant to think out of the box while implementing the mobile view.
 
@@ -46,7 +44,7 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 - For creating an animated progress bar
 
-4. [recharts][]
+4. [recharts][https://www.npmjs.com/package/recharts]
 
 - For adding barchart to project
 
