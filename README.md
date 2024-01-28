@@ -44,11 +44,5 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 - For creating an animated progress bar
 
-##### SYSTEM AND MOBILE VIEWS
-
-| SYSTEM                 | MOBILE             
-| ----------------------  -------------------------------------
-|
-
 
 
