@@ -22,5 +22,13 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 
 - I had the opportunity of exploring new packages
 
-2. It helped improve my creative skills as I was meant to think out of the box while implementing the mobile view
+2. It helped improve my creative skills as I was meant to think out of the box while implementing the mobile view.
+
+#### PACKAGES USED
+
+1. [react-redux and @reduxjs/toolkit](https://www.npmjs.com/package/redux)
+- For state management
+
+2. [TailwindCSS](https://tailwindcss.com/docs/installation)
+- For faster and easier implementation of CSS in my codebase
 
