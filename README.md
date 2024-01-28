@@ -27,8 +27,19 @@ I added a setTimeOut to extend the loader time before the display of the dashboa
 #### PACKAGES USED
 
 1. [react-redux and @reduxjs/toolkit](https://www.npmjs.com/package/redux)
+
 - For state management
 
 2. [TailwindCSS](https://tailwindcss.com/docs/installation)
+
 - For faster and easier implementation of CSS in my codebase
+
+3. [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner)
+
+- For loader creation
+
+4. [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner)
+
+- For creating an animated progress bar
+
 
