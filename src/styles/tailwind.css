@@ -483,7 +483,7 @@ li{
 
 
 .top-nav-list-mobile{
-  @apply flex space-x-2 w-full justify-center items-center bg-white dark:bg-element-dark p-2 dark:border-white dark:border-2 rounded-full;
+  @apply flex space-x-2 w-full justify-center items-center bg-bg-lightmode dark:bg-element-dark p-2 dark:border-white dark:border-2 rounded-full;
 }
 
 .side-bar-mobile li{

@@ -142,14 +142,17 @@ useEffect(()=>{
     <div className="overlay-nav-inner">
       <div  className="overlay-nav-menu dark:bg-element-dark">
 <div className="aside">
-<div className="close-menu w-full flex justify-end">
+<div className="close-menu w-full flex justify-between">
+<div className="w-[40px] h-[40px]">
+<img src={bolt} className="w-[40px] h-[40px]"/>
+</div>
 
 <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg" className='cursor-pointer fill-[#000000] dark:fill-[#ffffff]'  onClick={()=>{
              removeOverLay()
               }} ><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fillRule="evenodd"/></svg>
 </div>
     <div className="profile">
-    <div className="profile-image">
+    <div className="profile-image"> 
     <img src={avatar}/>
     </div>
     <div className="profile-details">
@@ -176,6 +179,7 @@ useEffect(()=>{
         />
        
         </div>
+        
         <div className="calendar-details-mobile">
         <img src={calendar}/>
         <p>November 15,2023</p>
@@ -188,7 +192,6 @@ useEffect(()=>{
         </div>
         <aside className="side-bar-mobile">
       <ul className="top-nav-list-mobile">
-        <SideList img={bolt}/>
         <SideList img={category}/>
         <SideList img={trade} />
         <SideList img={profile} />
@@ -202,7 +205,7 @@ useEffect(()=>{
    
 
     </aside>
-    <button className="mode-mobile relative bg-white mb-4">
+    <button className="mode-mobile relative bg-bg-lightmode mb-4">
 <div className= {darkValue==="light"?"bg-[#34CAA5] toggles":""} onClick={switchItLight}>
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-[4.5rem] h-[2.5rem]">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
