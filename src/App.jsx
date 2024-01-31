@@ -9,7 +9,8 @@ import { changeInfoState } from "./feature/info";
 import { changeInfoDataState } from "./feature/infoData";
 import InvoiceData from "./components/InvoiceData";
 import { asideState } from "./feature/aside";
-import { calendar,bell,avatar,downArrow,  bolt,
+import { 
+  calendar,bell,avatar,downArrow,bolt,
   category,
   discount,
   important,
@@ -20,13 +21,13 @@ import { calendar,bell,avatar,downArrow,  bolt,
   rightArrow,
   setting,
   sun,
-  trade, } from ".";
+  trade, } from "./index";
 import { useEffect, useState } from "react";
 import SideList from "./components/SideList"
 
 function App() {
   const overlay = useSelector((state) => state.overLay.value);
-  const trade = useSelector((state) => state.tradeLay.value);
+  const trades = useSelector((state) => state.tradeLay.value);
   const info = useSelector((state) => state.infoLay.value);
   const infoData= useSelector((state) => state.infoLayData.value);
   const asideLay = useSelector((state) => state.aside.value);
