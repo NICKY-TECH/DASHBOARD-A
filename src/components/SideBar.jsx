@@ -61,7 +61,7 @@ function SideBar() {
       </div>
   </div>
       <ul className="top-nav-list">
-        <SideList img={category} is="yes" />
+        <SideList img={category} is="yes"/>
         <SideList img={trade} is="yes" />
         <SideList img={profile} is="yes" />
         <SideList img={pack} is="yes" />

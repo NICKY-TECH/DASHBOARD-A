@@ -193,7 +193,7 @@ useEffect(()=>{
         </div>
         <aside className="side-bar-mobile">
       <ul className="top-nav-list-mobile">
-        <SideList img={category} mobile="yes"/>
+        <SideList img={category} mobile="yes" mobileScreen="true"/>
         <SideList img={trade} />
         <SideList img={profile} />
         <SideList img={pack} />
