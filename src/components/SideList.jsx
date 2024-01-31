@@ -1,7 +1,7 @@
 import "../styles/destination.css"
-function SideList({ img,is }) {
+function SideList({ img,mobile }) {
   return (
-    <li className={is==="yes"? "category" :"no"}>
+    <li className={mobile==="yes"? "dark:bg-[#f5fefd] rounded-full p-2 " :""}>
       <img src={img} />
     </li>
   );

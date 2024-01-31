@@ -27,7 +27,7 @@ import SideList from "./components/SideList"
 
 function App() {
   const overlay = useSelector((state) => state.overLay.value);
-  const trades = useSelector((state) => state.tradeLay.value);
+  // const trades = useSelector((state) => state.tradeLay.value);
   const info = useSelector((state) => state.infoLay.value);
   const infoData= useSelector((state) => state.infoLayData.value);
   const asideLay = useSelector((state) => state.aside.value);
@@ -35,7 +35,7 @@ function App() {
   const dispatch = useDispatch();
   const darkValue = useSelector((state) => state.darkMode.value);
   const disptach = useDispatch()
-  const [button,setButton] = useState(false)
+  // const [button,setButton] = useState(false)
   function switchItLight (){
     disptach(darkMode("light"));
   }
@@ -143,7 +143,7 @@ useEffect(()=>{
     <div className="overlay-nav-inner">
       <div  className="overlay-nav-menu dark:bg-element-dark">
 <div className="aside">
-<div className="close-menu w-full flex justify-between">
+<div className="close-menu w-full flex justify-between pt-4">
 <div className="w-[40px] h-[40px]">
 <img src={bolt} className="w-[40px] h-[40px]"/>
 </div>
@@ -193,7 +193,7 @@ useEffect(()=>{
         </div>
         <aside className="side-bar-mobile">
       <ul className="top-nav-list-mobile">
-        <SideList img={category}/>
+        <SideList img={category} mobile="yes"/>
         <SideList img={trade} />
         <SideList img={profile} />
         <SideList img={pack} />
@@ -206,7 +206,7 @@ useEffect(()=>{
    
 
     </aside>
-    <button className="mode-mobile relative bg-bg-lightmode mb-4">
+    <button className="mode-mobile relative bg-bg-lightmode mb-4 pb-3">
 <div className= {darkValue==="light"?"bg-[#34CAA5] toggles":""} onClick={switchItLight}>
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-[4.5rem] h-[2.5rem]">
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
