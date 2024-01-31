@@ -2,6 +2,15 @@
 
 THIS PROJECT IS MY PRODUCT FOR THE GEEGPAYFRONTEND CHALLENGE. IT IS AN IMPLEMENTATION OF THE GEEGPAY ANALYTICS DASHBOARD.
 
+ 
+## IMAGES OF COMPLETED AND HOSTED PROJECT
+
+![DESKTOP-VIEW](./src/resources/images/mobile%20(18).png)
+![DESKTOP-VIEW](./src/resources/images/mobile%20(19).png)
+![MOBILE-VIEW](./src/resources/images/mobile%20(17).png)
+![MOBILE-VIEW](./src/resources/images/mobile%20(20).png)
+
+
 ## BE CREATIVE
 
 we were tasked to be creative with our mobile view as well as implement functionalities that would make our implementation unique.
